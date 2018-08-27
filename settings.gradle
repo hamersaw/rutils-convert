@@ -1,0 +1,4 @@
+rootProject.name = 'rutils_convert'
+
+include ':rutils'
+project(':rutils').projectDir = new File(settingsDir, '../rutils')
