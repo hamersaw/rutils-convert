@@ -14,4 +14,4 @@ fi
 
 JAVA_OPTS="-Xmx2G"
 
-java -cp $CLASSPATH $JAVA_OPTS com.bushpath.rutils_convert.noaa.Main $@
+java -cp $CLASSPATH $JAVA_OPTS com.bushpath.rutils_convert.$@

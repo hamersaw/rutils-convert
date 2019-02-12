@@ -1,18 +1,16 @@
-package com.bushpath.rutils_convert.noaa;
+package com.bushpath.rutils_convert;
 
 import com.bushpath.rutils.reader.NoaaReader;
 import com.bushpath.rutils.reader.NoaaRecord;
 import com.bushpath.rutils.reader.Reader;
 import com.bushpath.rutils.util.Geohash;
 
-import java.util.Map;
-
-public class Main {
+public class Noaa2Csv {
     public static void main(String[] args) {
         try {
             // parse arguments
             if (args.length != 2) {
-                System.out.println("Usage: convert-noaa"
+                System.out.println("Usage: ./convert Noaa2Csv"
                     + " <comma-separated-features> <filename>");
                 System.exit(1);
             }
