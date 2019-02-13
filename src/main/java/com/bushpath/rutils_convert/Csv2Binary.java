@@ -30,11 +30,11 @@ public class Csv2Binary {
             }
 
             // iterate over records
-            double[] record = null;
+            float[] record = null;
             while ((record = in.next()) != null) {
                 // write record
-                for (double value : record) {
-                    out.writeFloat((float) value);
+                for (float value : record) {
+                    out.writeFloat(value);
                 }
             }
 
